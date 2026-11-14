@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/indezon/public_html/unirevo.in/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R /home/indezon/repositories/unirevo.in/assets $DEPLOYPATH
+    - /bin/cp -R /home/indezon/repositories/unirevo.in/includes $DEPLOYPATH
+    - /bin/cp /home/indezon/repositories/unirevo.in/about.php $DEPLOYPATH
+    - /bin/cp /home/indezon/repositories/unirevo.in/coming-soon.php $DEPLOYPATH
+    - /bin/cp /home/indezon/repositories/unirevo.in/contact.php $DEPLOYPATH
+    - /bin/cp /home/indezon/repositories/unirevo.in/financial-tools.php $DEPLOYPATH
+    - /bin/cp /home/indezon/repositories/unirevo.in/index.php $DEPLOYPATH
