@@ -1,0 +1,44 @@
+/* Active navigation state */
+.site-header .navbar-nav .nav-link.active,
+.site-header .navbar-nav .show > .nav-link {
+    color: #0755d9 !important;
+    font-weight: 600;
+    position: relative;
+}
+
+.site-header .navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 3px;
+    height: 3px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0755d9, #7047eb);
+}
+
+.site-header .dropdown-menu .dropdown-item.active,
+.site-header .dropdown-menu .dropdown-item:active {
+    color: #0755d9 !important;
+    background: #edf3ff !important;
+    font-weight: 600;
+}
+
+.site-header .nav-actions a.active {
+    color: #0755d9 !important;
+    font-weight: 700;
+}
+
+.site-header .nav-actions .nav-contact.active {
+    color: #fff !important;
+    background: #103a91;
+}
+
+@media (max-width: 991.98px) {
+    .site-header .navbar-nav .nav-link.active::after {
+        left: 0;
+        right: auto;
+        bottom: 0;
+        width: 34px;
+    }
+}
